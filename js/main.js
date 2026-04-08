@@ -10,8 +10,8 @@ function injectTopbar() {
   el.innerHTML = `<div class="topbar-inner">
     <span>ООО «Оптиком» — официальный дистрибьютор Bausch + Lomb в России</span>
     <div class="topbar-right">
-      <a href="tel:+78314281054">+7 (831) 428-10-54</a>
-      <a href="mailto:info@optikom.pro">info@optikom.pro</a>
+      <a href="tel:+78312140067">+7 (831) 214-00-67</a>
+      <a href="mailto:optikom_iol@mail.ru">optikom_iol@mail.ru</a><br><a href="mailto:optikom_iol@mail.ru">optikom_iol@mail.ru</a> · <a href="mailto:info@optikom.pro">info@optikom.pro</a>
     </div>
   </div>`;
   document.body.prepend(el);
@@ -82,10 +82,10 @@ function injectNav() {
         <li><a href="${r}products/service.html">Ремонт Stellaris</a></li>
         <li><a href="${r}products/service.html">Оригинальные запчасти</a></li>
       </ul>
-      <div style="margin-top:1.5rem;border:1px solid rgba(196,150,74,.2);padding:1.2rem;">
-        <div style="font-size:.7rem;font-weight:600;color:#C4964A;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.5rem;">Нужна консультация?</div>
+      <div style="margin-top:1.5rem;border:1px solid rgba(196,18,48,.2);padding:1.2rem;">
+        <div style="font-size:.7rem;font-weight:600;color:var(--red);letter-spacing:.14em;text-transform:uppercase;margin-bottom:.5rem;">Нужна консультация?</div>
         <div style="font-size:.78rem;color:rgba(255,255,255,.4);margin-bottom:.9rem;line-height:1.5;">Подберём решение под задачи вашей клиники</div>
-        <a href="${r}contact.html" style="display:inline-block;background:#C4964A;color:#0A0D12;text-decoration:none;padding:.5rem 1.2rem;font-size:.75rem;font-weight:700;font-family:sans-serif;letter-spacing:.08em;text-transform:uppercase;">Связаться →</a>
+        <a href="${r}contact.html" style="display:inline-block;background:var(--red);color:#0D1B2A;text-decoration:none;padding:.5rem 1.2rem;font-size:.75rem;font-weight:700;font-family:sans-serif;letter-spacing:.08em;text-transform:uppercase;">Связаться →</a>
       </div>
     </div>
     <div class="mega-footer">
@@ -119,7 +119,7 @@ function injectMobileNav() {
       <a href="${r}products/silicone.html">Масла и растворы</a>
       <a href="${r}products/service.html">Обслуживание</a>
     </details>
-    <a href="${r}contact.html" class="btn-gold">Оставить заявку</a>`;
+    <a href="${r}contact.html" class="btn-red">Оставить заявку</a>`;
   document.body.appendChild(el);
 }
 
@@ -136,10 +136,8 @@ function injectFooter() {
         </div>
         <p class="footer-about">ООО «Оптиком» — официальный дистрибьютор Bausch&nbsp;+&nbsp;Lomb в России. Поставки офтальмологического оборудования и ИОЛ в ведущие клиники страны.</p>
         <div class="footer-social">
-          <a href="https://wa.me/79200684117" aria-label="WhatsApp">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          </a>
-          <a href="tel:+78314281054" aria-label="Телефон">📞</a>
+
+          <a href="tel:+78312140067" aria-label="Телефон">📞</a>
           <a href="mailto:info@optikom.pro" aria-label="Email">✉</a>
         </div>
       </div>
@@ -157,9 +155,9 @@ function injectFooter() {
       </ul></div>
       <div class="footer-col"><h4>Контакты</h4>
         <address>г. Нижний Новгород,<br>ул. Агрономическая, д. 52А<br><br>
-          <a href="tel:+78314281054">+7 (831) 428-10-54</a><br>
-          <a href="https://wa.me/79200684117">+7 920 068 41 17 (WA)</a><br>
-          <a href="mailto:info@optikom.pro">info@optikom.pro</a>
+          <a href="tel:+78312140067">+7 (831) 214-00-67</a><br>
+          
+          <a href="mailto:optikom_iol@mail.ru">optikom_iol@mail.ru</a><br><a href="mailto:optikom_iol@mail.ru">optikom_iol@mail.ru</a> · <a href="mailto:info@optikom.pro">info@optikom.pro</a>
         </address>
       </div>
     </div>
@@ -175,7 +173,7 @@ function injectFooter() {
 function injectWidgets() {
   const r = ROOT;
   const wa = document.createElement('a');
-  wa.href = 'https://wa.me/79200684117?text=Здравствуйте!%20Хочу%20узнать%20о%20продукции%20Оптиком.';
+  wa.href = 'tel:+78312140067';
   wa.className = 'wa-float'; wa.target = '_blank'; wa.rel = 'noopener';
   wa.innerHTML = `<svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
   document.body.appendChild(wa);
@@ -221,7 +219,7 @@ function injectSEO() {
     "description":"Официальный дистрибьютор Bausch + Lomb в России. Интраокулярные линзы, Stellaris Elite, офтальмологическое оборудование.",
     "email":"info@optikom.pro",
     "address":{"@type":"PostalAddress","streetAddress":"ул. Агрономическая, д. 52А","addressLocality":"Нижний Новгород","addressCountry":"RU"},
-    "contactPoint":[{"@type":"ContactPoint","telephone":"+7-831-428-10-54","contactType":"customer service","availableLanguage":"Russian"}]
+    "contactPoint":[{"@type":"ContactPoint","telephone":"+7-831-214-00-67","contactType":"customer service","availableLanguage":"Russian"}]
   };
   const s = document.createElement('script'); s.type = 'application/ld+json';
   s.textContent = JSON.stringify(schema); document.head.appendChild(s);
