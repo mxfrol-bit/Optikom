@@ -312,7 +312,7 @@ footer{background:var(--n);color:rgba(255,255,255,.5)}
 .section-inner{max-width:1320px;margin:0 auto;padding:0 2rem}
 
 /* ─── PRODUCT DETAIL ─── */
-.product-detail{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.product-detail{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;position:relative;z-index:0}
 .detail-img-wrap{position:sticky;top:86px}
 .detail-img-main{background:var(--g);border:1px solid var(--border);border-radius:16px;padding:2.5rem;min-height:340px;display:flex;align-items:center;justify-content:center}
 .detail-img-main img{max-height:280px;object-fit:contain;width:100%;cursor:zoom-in;transition:transform .4s}
@@ -413,3 +413,9 @@ footer{background:var(--n);color:rgba(255,255,255,.5)}
   .about-badge{bottom:1rem;right:1rem}
   .detail-cta{flex-direction:column}
 }
+
+/* ─── PRODUCT DETAIL OVERFLOW FIX ─── */
+.product-detail { align-items: start; overflow: visible; }
+.detail-img-wrap { max-height: none; }
+/* The section wrapping product detail needs to properly contain children */
+[style*="background:var(--off)"] { padding-bottom: 5rem !important; overflow: visible; }
