@@ -13,8 +13,8 @@
   --border:  #E3E7EF;
   --text:    #1E293B;
   --muted:   #64748B;
-  --font-h:  'Nunito', sans-serif;
-  --font-b:  'Nunito', sans-serif;
+  --font-h:  'Nunito', sans-sans-serif;
+  --font-b:  'Nunito', sans-sans-serif;
   --ease:    cubic-bezier(.34,1.56,.64,1);
   --ease2:   cubic-bezier(.25,.46,.45,.94);
 }
