@@ -321,3 +321,21 @@ footer { background: var(--navy); color: rgba(255,255,255,.55); padding: 4.5rem 
   .hero h1 { font-size: 2rem; }
   .section-title { font-size: 1.75rem; }
 }
+
+/* ── SIMPLE DROPDOWN (Optikom nav) ── */
+.nav-links li { position: relative; }
+.simple-drop {
+  display: none; position: absolute; top: calc(100% + 8px); left: 0;
+  background: var(--white); border: 1px solid var(--border);
+  border-top: 3px solid var(--red); min-width: 220px;
+  box-shadow: 0 8px 32px rgba(13,27,42,.12);
+  list-style: none; padding: .5rem; z-index: 600;
+  border-radius: 0 0 4px 4px;
+}
+.nav-links li:hover .simple-drop { display: block; }
+.simple-drop li a {
+  display: block; padding: .55rem .9rem; font-size: .87rem;
+  color: var(--text); text-decoration: none; border-radius: 3px;
+  transition: background .15s, color .15s;
+}
+.simple-drop li a:hover { background: var(--red-bg); color: var(--red); }

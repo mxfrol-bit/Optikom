@@ -25,78 +25,34 @@ function injectNav() {
   <div class="progress-bar" id="progressBar"></div>
   <div class="nav-inner">
     <a href="${r}index.html" class="logo">
-      <img class="logo-img" src="https://mstk-production.up.railway.app/mstk/LOGO.png"
-           alt="Оптиком"
-           onerror="this.style.display='none'"
-           style="filter:hue-rotate(160deg) saturate(1.3);" />
+      <img class="logo-img" src="https://mstk-med.com/mstk/LOGO.png"
+           alt="Оптиком" style="filter:hue-rotate(160deg) saturate(1.2);"
+           onerror="this.style.display='none'"/>
       <div class="logo-text">
         <strong>ОПТИКОМ</strong>
         <small>Bausch + Lomb · Россия</small>
       </div>
     </a>
+
     <ul class="nav-links">
-      <li><a href="${r}about.html">О компании</a></li>
-      <li class="nav-mega-li">
-        <a href="${r}products/index.html" id="megaTrigger">Продукция ▾</a>
+      <li><a href="${r}products/iol.html">ИОЛ</a></li>
+      <li><a href="${r}products/equipment.html">Оборудование</a></li>
+      <li>
+        <a href="${r}products/index.html" id="prodTrigger">Ещё продукты ▾</a>
+        <ul class="simple-drop">
+          <li><a href="${r}products/surgery.html">Хирургические наборы</a></li>
+          <li><a href="${r}products/silicone.html">Силиконовые масла</a></li>
+          <li><a href="${r}products/service.html">Сервис и ТО</a></li>
+        </ul>
       </li>
+      <li><a href="${r}about.html">О компании</a></li>
       <li><a href="${r}contact.html" class="btn-nav">Оставить заявку</a></li>
     </ul>
+
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>`;
   document.body.insertBefore(el, document.body.children[1]);
-
-  // Mega wrap — injected as sibling of nav, NOT inside it
-  const mega = document.createElement('div');
-  mega.className = 'mega-wrap'; mega.id = 'megaWrap';
-  mega.style.display = 'none'; mega.style.pointerEvents = 'none';
-  mega.innerHTML = `<div class="mega-inner">
-    <div class="mega-col">
-      <div class="mega-col-title">Интраокулярные линзы</div>
-      <ul>
-        <li><a href="${r}products/envista.html">ENVISTA® <span class="tag">Моно</span></a></li>
-        <li><a href="${r}products/envista-toric.html">enVista™ Toric <span class="tag">Торик</span></a></li>
-        <li><a href="${r}products/luxgood.html">LuxGood™ <span class="tag">Preloaded</span></a></li>
-        <li><a href="${r}products/luxgood-toric.html">LuxGood™ Toric <span class="tag">Торик</span></a></li>
-        <li><a href="${r}products/luxsmart.html">LuxSmart™ <span class="tag">EDOF</span></a></li>
-        <li><a href="${r}products/luxsmart-toric.html">LuxSmart™ Toric <span class="tag">EDOF+</span></a></li>
-        <li><a href="${r}products/akreos.html">Akreos® AO <span class="tag">Гидро</span></a></li>
-      </ul>
-    </div>
-    <div class="mega-col">
-      <div class="mega-col-title">Оборудование</div>
-      <ul>
-        <li><a href="${r}products/equipment.html">Stellaris Elite™</a></li>
-        <li><a href="${r}products/surgery.html">Хирургические наборы</a></li>
-      </ul>
-      <div class="mega-col-title" style="margin-top:1.5rem">Материалы</div>
-      <ul>
-        <li><a href="${r}products/silicone.html">Силиконовые масла</a></li>
-        <li><a href="${r}products/silicone.html">EYEFILL® H.D.</a></li>
-        <li><a href="${r}products/silicone.html">БСС раствор</a></li>
-      </ul>
-    </div>
-    <div class="mega-col">
-      <div class="mega-col-title">Сервис</div>
-      <ul>
-        <li><a href="${r}products/service.html">Техническое обслуживание</a></li>
-        <li><a href="${r}products/service.html">Ремонт Stellaris</a></li>
-        <li><a href="${r}products/service.html">Оригинальные запчасти</a></li>
-      </ul>
-      <div style="margin-top:1.5rem;border:1px solid rgba(196,18,48,.2);padding:1.2rem;">
-        <div style="font-size:.7rem;font-weight:600;color:var(--red);letter-spacing:.14em;text-transform:uppercase;margin-bottom:.5rem;">Нужна консультация?</div>
-        <div style="font-size:.78rem;color:rgba(255,255,255,.4);margin-bottom:.9rem;line-height:1.5;">Подберём решение под задачи вашей клиники</div>
-        <a href="${r}contact.html" style="display:inline-block;background:var(--red);color:#0D1B2A;text-decoration:none;padding:.5rem 1.2rem;font-size:.75rem;font-weight:700;font-family:sans-serif;letter-spacing:.08em;text-transform:uppercase;">Связаться →</a>
-      </div>
-    </div>
-    <div class="mega-footer">
-      <p>Официальный дистрибьютор Bausch + Lomb · Россия · с 2006 года</p>
-      <a href="${r}products/index.html">Весь каталог →</a>
-    </div>
-  </div>`;
-  el.insertAdjacentElement('afterend', mega);
 }
-
-// ── MOBILE NAV ──
 function injectMobileNav() {
   const r = ROOT;
   const el = document.createElement('div');
@@ -355,7 +311,8 @@ window.handleSubmit = function(e) {
 // ── INIT ──
 document.addEventListener('DOMContentLoaded', () => {
   injectTopbar(); injectNav(); injectMobileNav(); injectFooter(); injectWidgets(); injectBottomNav(); injectSEO();
-  initMegaMenu(); initProgressBar(); initAnimations(); initCounters();
+  // initMegaMenu - not used
+  initProgressBar(); initAnimations(); initCounters();
   initLightbox(); initFloatingCTA(); initBackToTop(); initMobileMenu();
   try { initCursor(); } catch(e) {}
 });
