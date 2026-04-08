@@ -52,11 +52,11 @@ a{text-decoration:none}
 .nav-center>li>a svg{width:14px;height:14px;opacity:.5;transition:transform .2s}
 .nav-center>li:hover>a svg{transform:rotate(180deg);opacity:1}
 /* dropdown */
-.nav-drop{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--border);border-top:2px solid var(--r);border-radius:0 0 12px 12px;min-width:240px;padding:.5rem;box-shadow:0 16px 48px rgba(11,25,41,.14);list-style:none;z-index:999}
+.nav-drop{display:none;position:absolute;top:calc(100% + 6px);left:0;background:#fff;border:1px solid var(--border);border-top:2px solid var(--r);border-radius:0 0 10px 10px;min-width:220px;padding:.4rem;box-shadow:0 12px 40px rgba(11,25,41,.12);list-style:none;z-index:999}
 .nav-center>li:hover .nav-drop{display:block}
-.nav-drop a{display:flex;align-items:center;gap:.7rem;padding:.6rem 1rem;font-size:.86rem;font-weight:500;color:var(--t);border-radius:8px;transition:background .15s,color .15s}
+.nav-drop a{display:flex;align-items:center;justify-content:space-between;padding:.55rem .9rem;font-size:.86rem;font-weight:600;color:var(--t);border-radius:8px;transition:background .15s,color .15s;gap:.5rem}
 .nav-drop a:hover{background:var(--r-bg);color:var(--r)}
-.nav-drop a span{font-size:.6rem;background:var(--r-bg);color:var(--r);padding:.15rem .5rem;border-radius:4px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.nav-drop a span{font-size:.58rem;background:var(--r-bg);color:var(--r);padding:.12rem .5rem;border-radius:4px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;flex-shrink:0;white-space:nowrap}
 .nav-right{display:flex;align-items:center;gap:.8rem;flex-shrink:0}
 .nav-phone{font-size:.85rem;font-weight:700;color:var(--n);white-space:nowrap}
 .btn-nav{background:var(--r);color:#fff;font-size:.85rem;font-weight:700;padding:.6rem 1.4rem;border-radius:8px;transition:background .2s,transform .2s;white-space:nowrap}
@@ -85,29 +85,24 @@ a{text-decoration:none}
 .btn-white:hover{background:var(--off);transform:translateY(-1px)}
 
 /* ─── HERO ─── */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--n)}
+.hero{position:relative;min-height:92vh;display:flex;flex-direction:column;overflow:hidden;background:var(--n)}
 .hero-video-bg{position:absolute;inset:0;overflow:hidden}
-.hero-video-bg img{width:100%;height:100%;object-fit:cover;opacity:.25;filter:saturate(.7)}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(11,25,41,.96) 0%,rgba(11,25,41,.82) 40%,rgba(11,25,41,.45) 75%,rgba(196,18,48,.15) 100%)}
-.hero-inner{position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:7rem 2rem 5rem;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
-.hero-label{display:inline-flex;align-items:center;gap:.5rem;background:rgba(196,18,48,.15);border:1px solid rgba(196,18,48,.3);color:rgba(255,255,255,.85);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.4rem 1rem;border-radius:100px;margin-bottom:1.5rem}
+.hero-video-bg img{width:100%;height:100%;object-fit:cover;object-position:center right;opacity:.2;filter:saturate(.6)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,25,41,.97) 0%,rgba(11,25,41,.88) 50%,rgba(11,25,41,.5) 100%)}
+.hero-inner{position:relative;z-index:2;flex:1;display:flex;align-items:center;max-width:1320px;margin:0 auto;padding:7rem 2rem 4rem;width:100%}
+.hero-content{max-width:680px}
+.hero-label{display:inline-flex;align-items:center;gap:.5rem;background:rgba(196,18,48,.15);border:1px solid rgba(196,18,48,.3);color:rgba(255,255,255,.85);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.4rem 1rem;border-radius:100px;margin-bottom:1.8rem}
 .hero-label::before{content:'';width:6px;height:6px;background:var(--r);border-radius:50%;flex-shrink:0}
-.hero h1{font-size:4.2rem;font-weight:800;line-height:1.05;color:#fff;letter-spacing:-.03em;margin-bottom:1.4rem}
+.hero h1{font-size:5rem;font-weight:800;line-height:1.0;color:#fff;letter-spacing:-.04em;margin-bottom:1.5rem}
 .hero h1 mark{background:none;color:var(--r)}
-.hero-desc{font-size:1rem;color:rgba(255,255,255,.6);line-height:1.8;max-width:460px;margin-bottom:2.5rem}
+.hero-desc{font-size:1.05rem;color:rgba(255,255,255,.6);line-height:1.8;max-width:540px;margin-bottom:2.5rem}
 .hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
-.hero-right{display:flex;flex-direction:column;gap:1rem}
-.hero-product-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(10px);border-radius:16px;padding:1.5rem;display:flex;align-items:center;gap:1.2rem;transition:background .3s}
-.hero-product-card:hover{background:rgba(255,255,255,.09)}
-.hero-product-card img{width:70px;height:70px;object-fit:contain;flex-shrink:0;border-radius:8px;background:rgba(255,255,255,.06);padding:.5rem}
-.hero-product-card-info{}
-.hero-product-card-cat{font-size:.62rem;color:var(--r);font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.2rem}
-.hero-product-card-name{font-size:.95rem;font-weight:700;color:#fff;margin-bottom:.2rem}
-.hero-product-card-desc{font-size:.78rem;color:rgba(255,255,255,.5)}
-.hero-stats{position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:0 2rem;padding-bottom:3rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.1)}
-.hero-stat{padding:1.5rem 2rem;background:rgba(255,255,255,.04)}
-.hero-stat-n{font-size:2.4rem;font-weight:800;color:#fff;letter-spacing:-.03em;line-height:1}
-.hero-stat-l{font-size:.75rem;color:rgba(255,255,255,.5);margin-top:.3rem;font-weight:500}
+.hero-stats{position:relative;z-index:2;background:rgba(255,255,255,.06);border-top:1px solid rgba(255,255,255,.08)}
+.hero-stats-inner{max-width:1320px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr)}
+.hero-stat{padding:1.8rem 2rem;border-right:1px solid rgba(255,255,255,.08)}
+.hero-stat:last-child{border-right:none}
+.hero-stat-n{font-size:2.6rem;font-weight:800;color:#fff;letter-spacing:-.03em;line-height:1}
+.hero-stat-l{font-size:.75rem;color:rgba(255,255,255,.45);margin-top:.4rem;font-weight:500;line-height:1.4}
 
 /* ─── SECTION BASE ─── */
 .s{padding:6rem 0}
@@ -259,9 +254,8 @@ footer{background:var(--n);color:rgba(255,255,255,.5)}
 
 /* ─── RESPONSIVE ─── */
 @media(max-width:1100px){
-  .hero-inner{grid-template-columns:1fr;padding-top:5rem}
-  .hero-right{display:none}
-  .hero h1{font-size:3.2rem}
+  .hero-inner{padding-top:5rem}
+  .hero h1{font-size:3.5rem}
   .cats-grid{grid-template-columns:1fr 1fr}
   .cat-card--large{grid-column:span 1;aspect-ratio:4/3}
   .iol-grid{grid-template-columns:repeat(2,1fr)}
@@ -282,7 +276,7 @@ footer{background:var(--n);color:rgba(255,255,255,.5)}
   .nav-wrap{padding:0 1.2rem}
   .nav-center,.nav-right .nav-phone{display:none}
   .ham{display:flex}
-  .hero h1{font-size:2.4rem}
+  .hero h1{font-size:2.2rem}
   .hero-inner{padding:4.5rem 1.2rem 3rem}
   .hero-stats{grid-template-columns:repeat(2,1fr);padding:0 1.2rem 2rem}
   .trust-bar-inner{flex-direction:column;align-items:flex-start;gap:1rem;padding:1rem 1.2rem}
@@ -370,48 +364,22 @@ footer{background:var(--n);color:rgba(255,255,255,.5)}
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-inner">
-    <div>
+    <div class="hero-content">
       <div class="hero-label">Официальный дистрибьютор Bausch + Lomb</div>
-      <h1>Офтальмология<br/>нового<br/><mark>поколения</mark></h1>
-      <p class="hero-desc">Передовые решения Bausch&nbsp;+&nbsp;Lomb для хирургии катаракты и витреоретинальных операций. Поставки в ведущие клиники России с 2006&nbsp;года.</p>
+      <h1>Офтальмология<br/>нового <mark>поколения</mark></h1>
+      <p class="hero-desc">Передовые решения Bausch&nbsp;+&nbsp;Lomb для хирургии катаракты и витреоретинальных операций. Поставки в ведущие клиники России с&nbsp;2006&nbsp;года.</p>
       <div class="hero-btns">
         <a href="products/index.html" class="btn btn-red">Смотреть продукцию →</a>
-        <a href="contact.html" class="btn btn-ghost">Стать партнёром</a>
+        <a href="contact.html" class="btn btn-ghost">Запросить прайс-лист</a>
       </div>
     </div>
-    <div class="hero-right">
-      <a href="products/equipment.html" class="hero-product-card" style="text-decoration:none">
-        <img src="https://mstk-med.com/mstk/img/stellaris-2-Photoroom.png" alt="Stellaris"/>
-        <div class="hero-product-card-info">
-          <div class="hero-product-card-cat">Хирургическая система</div>
-          <div class="hero-product-card-name">Stellaris Elite™</div>
-          <div class="hero-product-card-desc">До 7500 cpm · Передний и задний сегменты</div>
-        </div>
-      </a>
-      <a href="products/envista.html" class="hero-product-card" style="text-decoration:none">
-        <img src="https://mstk-med.com/mstk/img/evistar.jpg" alt="ENVISTA"/>
-        <div class="hero-product-card-info">
-          <div class="hero-product-card-cat">ИОЛ монофокальная</div>
-          <div class="hero-product-card-name">ENVISTA® ИОЛ</div>
-          <div class="hero-product-card-desc">AO-технология · Без глистенинга</div>
-        </div>
-      </a>
-      <a href="products/luxsmart.html" class="hero-product-card" style="text-decoration:none">
-        <img src="https://mstk-med.com/mstk/img/83428-20108663.webp" alt="LuxSmart"/>
-        <div class="hero-product-card-info">
-          <div class="hero-product-card-cat">ИОЛ EDOF</div>
-          <div class="hero-product-card-name">LuxSmart™ EDOF</div>
-          <div class="hero-product-card-desc">Углублённый фокус · Без засветов</div>
-        </div>
-      </a>
-    </div>
   </div>
-  <div class="hero-stats">
+  <div class="hero-stats"><div class="hero-stats-inner">
     <div class="hero-stat"><div class="hero-stat-n" data-count="18" data-suffix="+">18+</div><div class="hero-stat-l">лет на рынке офтальмологии</div></div>
     <div class="hero-stat"><div class="hero-stat-n" data-count="100" data-suffix="+">100+</div><div class="hero-stat-l">клиник-партнёров по России</div></div>
     <div class="hero-stat"><div class="hero-stat-n" data-count="40" data-suffix="К+">40К+</div><div class="hero-stat-l">ИОЛ поставляется ежегодно</div></div>
     <div class="hero-stat"><div class="hero-stat-n" data-count="103">103</div><div class="hero-stat-l">аппарата на техобслуживании</div></div>
-  </div>
+  </div></div>
 </section>
 
 <!-- TRUST BAR -->
