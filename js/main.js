@@ -87,8 +87,7 @@ function injectFooter() {
     <div class="footer-grid">
       <div>
         <div class="footer-logo">
-          <img src="https://mstk-production.up.railway.app/mstk/LOGO.png" alt="Оптиком"
-               style="filter:hue-rotate(160deg) saturate(1.3) brightness(0) invert(1) opacity(.7);" />
+          <img src="${r}img/logo.png" alt="Оптиком" style="filter:brightness(0) invert(1) opacity(.8);" />
         </div>
         <p class="footer-about">ООО «Оптиком» — официальный дистрибьютор Bausch&nbsp;+&nbsp;Lomb в России. Поставки офтальмологического оборудования и ИОЛ в ведущие клиники страны.</p>
         <div class="footer-social">
