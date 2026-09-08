@@ -16,6 +16,9 @@ import {
 import { ContactForm } from '@/components/contact-form';
 import Home from '../page';
 import products from '@/lib/products.json';
+import { productDetails } from '@/lib/product-details';
+import { LensComparison } from '@/components/lens-comparison';
+import { lensComparison } from '@/lib/lens-comparison';
 type Props = {
   params: Promise<{ path: string[] }>;
   searchParams: Promise<{ product?: string | string[] }>;
@@ -156,6 +159,7 @@ export default async function Page({ params, searchParams }: Props) {
               </>
             )}
           </div>
+          <LensComparison products={lensComparison} />
           <ContactCTA />
         </main>
         <Footer />
@@ -290,6 +294,8 @@ export default async function Page({ params, searchParams }: Props) {
               cleaned,
             }))}
             title={p.title}
+            slug={p.slug}
+            details={productDetails[p.slug]}
           />
           <div className="detail-copy">
             <span className="section-label">{p.tag}</span>

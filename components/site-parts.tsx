@@ -31,6 +31,7 @@ export function ProductCard({ slug }: { slug: string }) {
           'product-visual' +
           ('cleaned' in p && p.cleaned ? ' studio-photo' : '')
         }
+        style={{ viewTransitionName: 'product-' + slug }}
       >
         <img
           src={p.image}

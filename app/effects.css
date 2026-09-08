@@ -1,0 +1,695 @@
+/* Optical motion: one visual language for light, focus and product detail. */
+:root {
+  --optical-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --optical-settle: cubic-bezier(0.2, 0.65, 0.3, 1);
+}
+html {
+  overflow-x: clip;
+}
+
+.live-optics {
+  --optical-x: 0;
+  --optical-y: 0;
+  isolation: isolate;
+}
+.live-optics .hero-art {
+  rotate: calc(var(--optical-x) * 2deg);
+  translate: calc(var(--optical-x) * 13px) calc(var(--optical-y) * 8px);
+  transition:
+    rotate 1.2s var(--optical-ease),
+    translate 1.2s var(--optical-ease);
+}
+.optical-light-field {
+  position: absolute;
+  inset: -50px 20% 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+.optical-caustic {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.52;
+  transition: translate 1.2s var(--optical-ease);
+}
+.optical-caustic-cool {
+  width: 76%;
+  height: 18%;
+  left: 12%;
+  bottom: 9%;
+  background: radial-gradient(
+    ellipse,
+    #6ebec680,
+    #91cfd62b 40%,
+    transparent 70%
+  );
+  translate: calc(var(--optical-x) * -27px) calc(var(--optical-y) * -8px);
+  animation: caustic-breathe 9s var(--optical-settle) infinite alternate;
+}
+.optical-caustic-warm {
+  width: 34%;
+  height: 42%;
+  right: 28%;
+  top: 17%;
+  background: radial-gradient(
+    ellipse,
+    #fff3cf26 0%,
+    #f4cc7852 35%,
+    #ffffff28 50%,
+    transparent 72%
+  );
+  rotate: -25deg;
+  translate: calc(var(--optical-x) * 21px) calc(var(--optical-y) * 13px);
+  mix-blend-mode: soft-light;
+  animation: optical-glint 8s var(--optical-settle) infinite alternate;
+}
+@keyframes caustic-breathe {
+  from {
+    transform: scale(0.9) rotate(-8deg);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(1.12) rotate(6deg);
+    opacity: 0.7;
+  }
+}
+@keyframes optical-glint {
+  from {
+    transform: translate(-7%, 3%) rotate(-7deg);
+    opacity: 0.2;
+  }
+  to {
+    transform: translate(5%, -4%) rotate(9deg);
+    opacity: 0.85;
+  }
+}
+.live-optics[data-paused='true'] *,
+.live-optics[data-visible='false'] * {
+  animation-play-state: paused !important;
+}
+.optical-motion-toggle {
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 6px 12px;
+  color: #48696a;
+  background: #f7fafbba;
+  border: 1px solid #c8d9d855;
+  border-radius: 30px;
+  font: 11px var(--body);
+  cursor: pointer;
+}
+.optical-motion-toggle:hover {
+  background: white;
+}
+.solution-equipment > img,
+.equipment-editorial > img {
+  mask-image: radial-gradient(
+    ellipse 66% 66% at center,
+    #000 44%,
+    transparent 77%
+  );
+}
+
+/* One long optical scene. Text remains readable even before hydration. */
+.optical-story {
+  --story-progress: 0;
+  background: #071e29;
+  color: #eff9fa;
+  position: relative;
+  padding: 94px 0 70px;
+  overflow: clip;
+}
+.optical-story-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 30px;
+  align-items: start;
+}
+.optical-story .section-label {
+  color: #95bfc7;
+}
+.optical-story-intro {
+  font-size: clamp(40px, 4.2vw, 64px);
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+}
+.optical-story-intro span {
+  color: #8dc1c9;
+}
+.optical-chapters {
+  margin-top: 38px;
+}
+.optical-chapter {
+  min-height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 28px 40px 26px;
+  border-left: 1px solid #315260;
+  scroll-margin-top: 130px;
+}
+.optical-chapter[data-active='true'] {
+  border-left-color: #8bd2dc;
+}
+.optical-chapter-number {
+  color: #94c6cd;
+  font: 12px var(--mono);
+  letter-spacing: 0.055em;
+}
+.optical-chapter h3 {
+  font-size: clamp(27px, 2.6vw, 37px);
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+  margin: 22px 0 16px;
+}
+.optical-chapter h3 > span {
+  display: block;
+}
+.optical-chapter p {
+  max-width: 370px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #b3cbd2;
+}
+.optical-chapter .text-link {
+  margin-top: 24px;
+  color: #ddf8fa;
+}
+.optical-story-visual {
+  position: sticky;
+  top: 135px;
+  margin-top: 30px;
+  min-width: 0;
+}
+.optical-story-picture {
+  position: relative;
+  aspect-ratio: 1 / 1.08;
+  margin: 0 -38px;
+}
+.optical-story-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask-image: radial-gradient(
+    ellipse 69% 66% at center,
+    #000 42%,
+    transparent 77%
+  );
+  transform: translateY(calc(var(--story-progress) * -15px))
+    scale(calc(1 + var(--story-progress) * 0.13))
+    rotate(calc(var(--story-progress) * 10deg - 5deg));
+}
+.optical-story-caption {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #345461;
+}
+.optical-story-caption > span {
+  font: 27px var(--display);
+  letter-spacing: -0.05em;
+  white-space: nowrap;
+}
+.optical-story-caption > span > span {
+  color: #8eb0bd;
+  font-size: 16px;
+}
+.optical-story-caption p {
+  color: #c0dce2;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.optical-chapter-nav {
+  display: flex;
+  gap: 10px;
+  padding-top: 19px;
+}
+.optical-chapter-nav a {
+  flex: 1;
+  min-height: 44px;
+  padding: 12px 5px;
+  font-size: 13px;
+  text-align: center;
+  color: #b2ccd4;
+  border-radius: 30px;
+  border: 1px solid #345461;
+  transition:
+    background 0.25s,
+    color 0.25s;
+}
+.optical-chapter-nav a[aria-current='step'],
+.optical-chapter-nav a:hover {
+  color: #071e29;
+  background: #b3e6e9;
+  border-color: #b3e6e9;
+}
+.optical-art-caption {
+  display: block;
+  color: #93b5c1;
+  font-size: 11px;
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* Hotspots use the same normalized frame as the square product render. */
+.product-hotspots {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4;
+}
+.product-hotspot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #ffffffd9;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 5px #ffffff4f,
+    0 5px 16px #0b3c4129;
+  background: #fffefdf0;
+  color: #215d60;
+  font: 600 12px var(--mono);
+  cursor: pointer;
+  transition:
+    background 0.25s,
+    color 0.25s,
+    box-shadow 0.3s var(--optical-settle);
+}
+.product-hotspot:hover,
+.product-hotspot[aria-pressed='true'] {
+  color: white;
+  background: #216c72;
+  box-shadow:
+    0 0 0 5px #ffffff99,
+    0 5px 16px #0b3c4140;
+}
+.product-detail-insight {
+  display: grid;
+  grid-template-columns: 94px 1fr;
+  gap: 19px;
+  align-items: start;
+  margin-top: 16px;
+  padding: 17px;
+  border: 1px solid #d2e3e2;
+  border-radius: 18px;
+  background: #eef5f5;
+  min-height: 170px;
+}
+.product-detail-crop {
+  position: relative;
+  width: 94px;
+  height: 110px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f6f8f8;
+}
+.product-detail-crop img {
+  position: absolute;
+  width: 380%;
+  height: 380%;
+  max-width: none;
+  object-fit: fill;
+}
+.product-detail-crop svg {
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  color: #216c72;
+  background: #ffffffbd;
+  border-radius: 4px;
+}
+.insight-label {
+  font: 10px var(--mono);
+  letter-spacing: 0.05em;
+  color: #507778;
+}
+.product-detail-insight h2 {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+  margin: 7px 0;
+}
+.product-detail-insight p {
+  color: #506b72;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.product-detail-insight a {
+  color: #176069;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 9px;
+}
+.detail-gallery
+  [data-slot='tabs-content']:not([hidden])
+  .gallery-image-trigger
+  > img {
+  animation: gallery-focus 0.45s var(--optical-ease);
+}
+@keyframes gallery-focus {
+  from {
+    opacity: 0.4;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Comparison is a real table, including a locally scrollable mobile version. */
+.lens-comparison {
+  padding-top: 110px;
+  padding-bottom: 30px;
+  scroll-margin-top: 90px;
+}
+.comparison-intro {
+  max-width: 315px;
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.comparison-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+.comparison-toolbar label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.comparison-toolbar input {
+  width: 18px;
+  height: 18px;
+  accent-color: #24696b;
+}
+.comparison-toolbar button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 11px 16px;
+  border-radius: 28px;
+  border: 1px solid #bdd4d3;
+  font-size: 14px;
+  color: #245f62;
+  cursor: pointer;
+}
+.comparison-toolbar button:hover {
+  background: #e4f0ef;
+}
+.comparison-scroll {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 20px;
+  border: 1px solid #d7e4e3;
+}
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  min-width: 660px;
+  background: #fcfdfd;
+}
+.comparison-table th,
+.comparison-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 20px 24px;
+  font-size: 14px;
+  line-height: 1.7;
+  border-bottom: 1px solid #dfe9e8;
+  font-weight: 400;
+}
+.comparison-table th:first-child {
+  width: 22%;
+  color: #4c6971;
+}
+.comparison-table thead th {
+  background: #eef4f4;
+  vertical-align: bottom;
+  padding-bottom: 24px;
+}
+.comparison-table thead img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 16px;
+  margin: 0 auto 18px;
+  animation: gallery-focus 0.4s var(--optical-ease);
+}
+.comparison-table select {
+  display: block;
+  width: 100%;
+  border: 1px solid #c3d5d5;
+  border-radius: 9px;
+  background: #fcfdfd;
+  padding: 10px 8px;
+  min-height: 44px;
+  font: 16px var(--display);
+  color: #174b55;
+  cursor: pointer;
+}
+.comparison-table-label {
+  display: block;
+  font: 600 24px/0.95 var(--display);
+  letter-spacing: -0.06em;
+  color: #326d74;
+  margin-bottom: 16px;
+}
+.comparison-table thead small {
+  font-size: 12px;
+  line-height: 1.6;
+  display: block;
+}
+.comparison-table [data-different='true'] td {
+  background: #edf6f5;
+  color: #1e5257;
+}
+.comparison-table tfoot th,
+.comparison-table tfoot td {
+  border-bottom: 0;
+}
+.comparison-table tfoot a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 34px;
+  color: #246669;
+  font-weight: 600;
+}
+.comparison-note {
+  color: #5d797c;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-top: 17px;
+}
+.comparison-scroll-hint {
+  display: none;
+}
+
+@view-transition {
+  navigation: auto;
+}
+::view-transition-group(*) {
+  animation-duration: 0.45s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.2s;
+}
+
+@media (min-width: 901px) and (max-height: 800px) {
+  .optical-story-visual {
+    top: 106px;
+  }
+  .optical-story-picture {
+    max-height: 47vh;
+  }
+  .optical-story-picture img {
+    width: 120%;
+    max-width: none;
+    margin-left: -10%;
+  }
+}
+@media (max-width: 900px) {
+  .optical-story {
+    padding: 62px 0;
+  }
+  .optical-story-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .optical-story-copy {
+    display: contents;
+  }
+  .optical-story-copy > .section-label {
+    order: 0;
+    margin: 0;
+  }
+  .optical-story-intro {
+    order: 1;
+  }
+  .optical-story-visual {
+    position: static;
+    order: 2;
+    margin-top: 0;
+  }
+  .optical-story-picture {
+    aspect-ratio: 1.3;
+    margin: -20px 0;
+    max-height: 520px;
+  }
+  .optical-story-picture img {
+    transform: none;
+    object-fit: contain;
+  }
+  .optical-chapter-nav,
+  .optical-story-caption {
+    display: none;
+  }
+  .optical-art-caption {
+    margin-top: 0;
+  }
+  .optical-chapters {
+    order: 3;
+    margin-top: 14px;
+  }
+  .optical-chapter {
+    min-height: 0;
+    padding: 26px 0 26px 22px;
+    border-left-color: #416b77;
+  }
+  .optical-chapter p {
+    max-width: 590px;
+  }
+  .optical-chapter h3 {
+    font-size: 28px;
+    margin-top: 13px;
+  }
+  .optical-chapter h3 > span {
+    display: inline;
+  }
+  .optical-chapter h3 > span + span::before {
+    content: ' ';
+  }
+  .lens-comparison {
+    padding-top: 70px;
+  }
+}
+@media (max-width: 760px), (pointer: coarse) {
+  .live-optics .hero-art {
+    translate: none;
+    rotate: none;
+    animation: none;
+  }
+  .optical-light-field,
+  .optical-motion-toggle {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .comparison-scroll-hint {
+    display: block;
+    font-size: 12px;
+    color: #58777a;
+    line-height: 1.6;
+    margin-bottom: 13px;
+  }
+  .optical-story-intro {
+    font-size: 43px;
+  }
+  .optical-story-picture {
+    margin-inline: -16px;
+  }
+  .optical-chapter p {
+    font-size: 15px;
+  }
+  .product-detail-insight {
+    grid-template-columns: 70px 1fr;
+    padding: 14px;
+    gap: 14px;
+    min-height: 182px;
+  }
+  .product-detail-crop {
+    width: 70px;
+    height: 90px;
+  }
+  .product-detail-insight h2 {
+    font-size: 16px;
+  }
+  .product-detail-insight p {
+    font-size: 13px;
+  }
+  .comparison-table {
+    min-width: 620px;
+  }
+  .comparison-table th,
+  .comparison-table td {
+    padding: 17px 15px;
+  }
+  .comparison-table thead img {
+    width: 120px;
+    height: 120px;
+  }
+  .comparison-intro {
+    max-width: none;
+  }
+  .comparison-toolbar {
+    gap: 9px;
+  }
+  .comparison-toolbar button {
+    font-size: 13px;
+    padding-inline: 12px;
+  }
+  .comparison-toolbar label {
+    font-size: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .live-optics .hero-art {
+    translate: none;
+    rotate: none;
+  }
+  .optical-light-field,
+  .optical-motion-toggle {
+    display: none;
+  }
+  .optical-story-picture img {
+    transform: none;
+  }
+  .optical-story-visual {
+    position: static;
+  }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

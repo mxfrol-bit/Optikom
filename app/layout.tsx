@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import './fonts.css';
+import './effects.css';
 export const metadata: Metadata = {
   metadataBase: new URL(
     'https://optikom-vision-test-production.up.railway.app',

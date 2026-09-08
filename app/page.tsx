@@ -1,6 +1,7 @@
 import { Header } from '@/components/site-header';
 import { HomeSections } from '@/components/home-sections';
 import { Footer } from '@/components/site-parts';
+import { LiveOptics } from '@/components/live-optics';
 import { ArrowUpRight, ArrowDown, Plus, MoveUpRight } from 'lucide-react';
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
             </h1>
             <p className="hero-sub">Передовые решения Bausch + Lomb.</p>
           </div>
-          <div className="optical-stage">
+          <LiveOptics>
             <img
               className="hero-art iol-hero-art"
               src="/assets/optimized/iol-render.webp"
@@ -74,7 +75,7 @@ export default function Home() {
               </div>
               <ArrowUpRight size={18} />
             </a>
-          </div>
+          </LiveOptics>
           <div className="hero-bottom">
             <span>ПОМОГАЕМ ВИДЕТЬ БОЛЬШЕ С 2006 ГОДА</span>
             <a href="#solutions">

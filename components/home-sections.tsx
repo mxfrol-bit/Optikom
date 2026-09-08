@@ -3,6 +3,7 @@ import products from '@/lib/products.json';
 import { EquipmentSpecs, HomeContact } from './original-sections';
 import { ArrowUpRight } from 'lucide-react';
 import { ProductCard, Stats, Advantages, ContactCTA } from './site-parts';
+import { OpticalStory } from './optical-story';
 const equipmentImage = products.find(
   (product) => product.slug === 'equipment',
 )!.image;
@@ -104,6 +105,7 @@ export function HomeSections() {
           </div>
         </div>
       </section>
+      <OpticalStory />
       <section className="lens-section">
         <div className="container">
           <div className="section-heading">
