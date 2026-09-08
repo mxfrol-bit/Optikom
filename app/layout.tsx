@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 import './fonts.css';
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    'https://optikom-vision-test-production.up.railway.app',
+  ),
   robots: { index: false, follow: false },
   icons: { icon: '/favicon.svg' },
   title: 'Оптиком — новый взгляд на офтальмологию',
@@ -11,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Оптиком — дистрибьютор Bausch + Lomb',
     description:
       'Поставки ИОЛ и хирургического оборудования в 100+ клиник России с 2006 года',
-    images: ['https://mstk-med.com/mstk/img/stellaris-2-Photoroom.png'],
+    images: ['/assets/products/stellaris-front-v2.webp'],
   },
 };
 export default function RootLayout({

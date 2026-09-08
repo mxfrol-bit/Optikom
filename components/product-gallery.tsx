@@ -1,6 +1,6 @@
 'use client';
 
-import { Maximize2, ArrowUpRight, X } from 'lucide-react';
+import { Maximize2, X } from 'lucide-react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import {
   Dialog,
@@ -14,21 +14,18 @@ import {
 type Photo = {
   src: string;
   alt: string;
-  originalSrc?: string;
   cleaned?: boolean;
 };
 
-function PhotoCollection({
+export function ProductGallery({
   photos,
   title,
-  sourceMode = false,
 }: {
   photos: Photo[];
   title: string;
-  sourceMode?: boolean;
 }) {
   return (
-    <>
+    <div className="detail-gallery">
       <Tabs defaultValue="0">
         {photos.map((photo, index) => (
           <TabsContent value={String(index)} key={photo.src}>
@@ -73,19 +70,12 @@ function PhotoCollection({
                   width="1254"
                   height="1254"
                 />
-                <a
-                  href={photo.originalSrc || photo.src}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Исходное изображение <ArrowUpRight size={16} />
-                </a>
               </DialogContent>
             </Dialog>
           </TabsContent>
         ))}
         <div className="gallery-caption">
-          <span>{sourceMode ? 'Фото изделия' : 'Визуализация'}</span>
+          <span>Визуализация</span>
           <span>Нажмите на фото для увеличения</span>
         </div>
         {photos.length > 1 && (
@@ -117,44 +107,6 @@ function PhotoCollection({
           </TabsList>
         )}
       </Tabs>
-    </>
-  );
-}
-
-export function ProductGallery({
-  photos,
-  title,
-}: {
-  photos: Photo[];
-  title: string;
-}) {
-  const hasRenders = photos.some(
-    (photo) => photo.originalSrc && photo.originalSrc !== photo.src,
-  );
-  const sourcePhotos = photos.map((photo) => ({
-    ...photo,
-    src: photo.originalSrc || photo.src,
-    cleaned: false,
-  }));
-
-  return (
-    <div className="detail-gallery">
-      {hasRenders ? (
-        <Tabs defaultValue="renders" className="gallery-presentation">
-          <TabsList className="gallery-mode-tabs" aria-label="Тип изображения">
-            <TabsTrigger value="renders">Визуализации</TabsTrigger>
-            <TabsTrigger value="originals">Исходные фото</TabsTrigger>
-          </TabsList>
-          <TabsContent value="renders">
-            <PhotoCollection photos={photos} title={title} />
-          </TabsContent>
-          <TabsContent value="originals">
-            <PhotoCollection photos={sourcePhotos} title={title} sourceMode />
-          </TabsContent>
-        </Tabs>
-      ) : (
-        <PhotoCollection photos={photos} title={title} sourceMode />
-      )}
     </div>
   );
 }

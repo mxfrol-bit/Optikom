@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       openGraph: {
         title: p.title + ' — Оптиком',
         description: p.description,
-        images: [p.sourceImage],
+        images: [p.image],
       },
     };
   return {
@@ -283,7 +283,14 @@ export default async function Page({ params, searchParams }: Props) {
       <main id="main">
         <Breadcrumbs label={names[p.slug]} />
         <section className="product-detail container">
-          <ProductGallery photos={p.gallery} title={p.title} />
+          <ProductGallery
+            photos={p.gallery.map(({ src, alt, cleaned }) => ({
+              src,
+              alt,
+              cleaned,
+            }))}
+            title={p.title}
+          />
           <div className="detail-copy">
             <span className="section-label">{p.tag}</span>
             <h1>{p.title}</h1>
