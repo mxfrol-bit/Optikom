@@ -90,3 +90,36 @@ export function EquipmentSpecs() {
     </div>
   );
 }
+
+export function ContactMap() {
+  const address = 'Нижний Новгород, улица Агрономическая, 52А';
+  const query = encodeURIComponent(address);
+  return (
+    <section className="contact-map" aria-labelledby="contact-map-title">
+      <div className="contact-map-heading">
+        <div>
+          <span className="section-label">КАК НАС НАЙТИ</span>
+          <h2 id="contact-map-title">Оптиком на карте.</h2>
+          <p>{address}</p>
+        </div>
+        <a
+          className="button outline"
+          href={'https://www.google.com/maps/search/?api=1&query=' + query}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Открыть карту <ArrowUpRight size={18} />
+        </a>
+      </div>
+      <iframe
+        src={
+          'https://maps.google.com/maps?q=' + query + '&z=16&output=embed&hl=ru'
+        }
+        title={'Оптиком — ' + address}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        allowFullScreen
+      />
+    </section>
+  );
+}

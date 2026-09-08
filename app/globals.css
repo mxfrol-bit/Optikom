@@ -1473,6 +1473,37 @@ h3 {
   grid-template-columns: 1fr 1.15fr;
   gap: 80px;
 }
+.contact-map {
+  margin-top: 80px;
+  padding-top: 45px;
+  border-top: 1px solid var(--border);
+}
+.contact-map-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+.contact-map-heading h2 {
+  font: 500 clamp(32px, 4vw, 48px)/1.15 var(--display);
+  letter-spacing: -0.045em;
+  margin-bottom: 14px;
+}
+.contact-map-heading p {
+  color: #527179;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  height: clamp(320px, 42vw, 440px);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: #eaf3f3;
+}
 .contact-details {
   display: flex;
   flex-direction: column;

@@ -1,5 +1,5 @@
 import { ProductGallery } from '@/components/product-gallery';
-import { OriginalCompany } from '@/components/original-sections';
+import { OriginalCompany, ContactMap } from '@/components/original-sections';
 import original from '@/lib/original-content.json';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -155,7 +155,8 @@ export default async function Page({ params, searchParams }: Props) {
                 Интраокулярные линзы
               </a>
               <a href="/products/equipment.html">Оборудование</a>
-              <a href="/products/silicone.html">Материалы</a>
+              <a href="/products/silicone.html">Масла и растворы</a>
+              <a href="/products/surgery.html">Хирургические наборы</a>
               <a href="/products/service.html">Сервис</a>
             </nav>
           </div>
@@ -296,6 +297,7 @@ export default async function Page({ params, searchParams }: Props) {
               initialInterest={selectedProduct?.title}
             />
           </div>
+          <ContactMap />
         </main>
         <Footer />
       </>
