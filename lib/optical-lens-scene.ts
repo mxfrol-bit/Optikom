@@ -86,7 +86,7 @@ export function createOpticalLensScene(
     softbox('#c7f4ff', 1.6, 0.3, 6, [-2, 1, 5]);
     const pmrem = new THREE.PMREMGenerator(renderer);
     cleanups.push(() => pmrem.dispose());
-    const environment = pmrem.fromScene(studio, 0.055);
+    const environment = pmrem.fromScene(studio, 0.02);
     cleanups.push(() => environment.dispose());
     scene.environment = environment.texture;
     const keyLight = new THREE.DirectionalLight('#a9efff', 2);
