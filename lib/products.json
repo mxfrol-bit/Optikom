@@ -1,0 +1,540 @@
+[
+  {
+    "slug": "akreos",
+    "href": "/products/akreos.html",
+    "title": "Akreos® AO — гидрофильная ИОЛ",
+    "tag": "ИОЛ гидрофильная",
+    "description": "Инновационная гидрофильная акриловая ИОЛ с безаберрационной оптикой. 4-точечная фиксация, три размера под капсульный мешок, квадратный край 360°.",
+    "image": "/assets/catalog/akreos.webp",
+    "sourceImage": "https://mstk-med.com/mstk/img/csm_aekros-ao_f426e2ab71.jpg",
+    "features": [
+      "Гидрофильный акрил с содержанием воды 26%",
+      "Монофокальная двояковыпуклая безаберрационная оптика",
+      "Квадратный край 360° против ПЗК",
+      "4-точечная фиксация — стабильность и центровка",
+      "Три размера для разных капсульных мешков"
+    ],
+    "specs": [
+      {
+        "title": "Материал",
+        "items": [
+          "Гидрофильный акрил 26%",
+          "УФ-фильтр",
+          "Рефракционный индекс: 1.46"
+        ]
+      },
+      {
+        "title": "Диоптрийный ряд",
+        "items": [
+          "0.00–10.00 D (шаг 1.00 D)",
+          "10.00–30.00 D (шаг 0.50 D)"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/catalog/akreos.webp",
+        "alt": "Akreos® AO — гидрофильная ИОЛ",
+        "originalSrc": "/assets/original/csm_aekros-ao_f426e2ab71.jpg",
+        "cleaned": true
+      }
+    ],
+    "cleaned": true,
+    "imageWidth": 1254,
+    "imageHeight": 1254
+  },
+  {
+    "slug": "envista-toric",
+    "href": "/products/envista-toric.html",
+    "title": "enVista™ Toric — торическая ИОЛ",
+    "tag": "ИОЛ торическая",
+    "description": "Торическая ИОЛ для одновременной коррекции катаракты и астигматизма роговицы. Инновационный дизайн гаптики обеспечивает высокую ротационную стабильность.",
+    "image": "/assets/catalog/envista-toric.webp",
+    "sourceImage": "https://mstk-med.com/mstk/img/csm_envista-toric_fc1affb7c7.jpg",
+    "features": [
+      "Гидрофобный акрил с содержанием воды 4% — без глистенинга",
+      "Высокая ротационная стабильность — предсказуемая коррекция астигматизма",
+      "Безаберрационная асферическая оптика",
+      "Квадратный край 360° против вторичной катаракты",
+      "Цилиндр в плоскости ИОЛ: от +1.25 D до +5.75 D"
+    ],
+    "specs": [
+      {
+        "title": "Материал",
+        "items": [
+          "Гидрофобный акрил, содержание воды 4%",
+          "УФ-фильтр",
+          "Рефракционный индекс: 1.54"
+        ]
+      },
+      {
+        "title": "Дизайн",
+        "items": [
+          "Диаметр оптики: 6.0 мм",
+          "Общий диаметр: 12.5 мм",
+          "Квадратный край 360°"
+        ]
+      },
+      {
+        "title": "Показания",
+        "items": [
+          "Коррекция афакии с корнеальным астигматизмом после удаления катаракты",
+          "Имплантация в капсулярный мешок"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/catalog/envista-toric.webp",
+        "alt": "enVista™ Toric — торическая ИОЛ",
+        "originalSrc": "/assets/original/csm_envista-toric_fc1affb7c7.jpg",
+        "cleaned": true
+      }
+    ],
+    "cleaned": true,
+    "imageWidth": 1254,
+    "imageHeight": 1254
+  },
+  {
+    "slug": "envista",
+    "href": "/products/envista.html",
+    "title": "ENVISTA® Интраокулярная линза",
+    "tag": "ИОЛ монофокальная",
+    "description": "Одночастная монофокальная ИОЛ из гидрофобного акрила, свободная от глистенинга. Безаберрационная Advanced Optics (AO) технология — новый стандарт монофокальных ИОЛ.",
+    "image": "/assets/catalog/envista.webp",
+    "sourceImage": "https://mstk-med.com/mstk/img/evistar.jpg",
+    "features": [
+      "Trusight™ оптика — свободна от образования эффекта glistening",
+      "Advanced Optics (AO) — не индуцирует сферических аберраций",
+      "Нейтральна к аберрациям роговицы, снижает чувствительность к децентрации",
+      "SureEdge™ 360° posterior square edge — профилактика ПЗК",
+      "Модифицированная С-образная гаптика с отверстиями"
+    ],
+    "specs": [
+      {
+        "title": "Материал",
+        "items": [
+          "Гидрофобный акрил без риска глистенинга",
+          "УФ-фильтр",
+          "Рефракционный индекс: 1.53"
+        ]
+      },
+      {
+        "title": "Дизайн",
+        "items": [
+          "Монофокальная асферическая безаберрационная двояковыпуклая оптика",
+          "Диаметр оптики: 6.0 мм",
+          "Общий диаметр: 12.5 мм",
+          "360° задний квадратный край"
+        ]
+      },
+      {
+        "title": "Диоптрийный ряд",
+        "items": [
+          "От 0.00 D до +34.00 D",
+          "0.00–10.00 D (шаг 1.00 D)",
+          "10.00–30.00 D (шаг 0.50 D)",
+          "30.00–34.00 D (шаг 1.00 D)"
+        ]
+      },
+      {
+        "title": "Константы",
+        "items": [
+          "SRK/T Constant A: 119.1"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/catalog/envista.webp",
+        "alt": "ENVISTA® Интраокулярная линза",
+        "originalSrc": "/assets/original/evistar.jpg",
+        "cleaned": true
+      }
+    ],
+    "cleaned": true,
+    "imageWidth": 1254,
+    "imageHeight": 1254
+  },
+  {
+    "slug": "equipment",
+    "href": "/products/equipment.html",
+    "title": "Stellaris Elite™",
+    "tag": "Хирургическое оборудование",
+    "description": "Передовая комбинированная офтальмологическая платформа для хирургии катаракты и витреоретинальных операций. Единая система — неограниченные возможности хирурга.",
+    "image": "/assets/products/stellaris-front-v2.webp",
+    "sourceImage": "https://mstk-med.com/mstk/img/1.jpg",
+    "features": [
+      "Витрэктомия до 7500 cpm — хирургия заднего сегмента нового уровня",
+      "Stable Chamber™ — исключительная стабильность передней камеры",
+      "Attune™ — ультразвуковая рукоятка для удаления катаракты",
+      "Bi-Blade® — инструменты для витреоретинальной хирургии",
+      "Поддержка MICS: 23G, 25G, 27G"
+    ],
+    "specs": [
+      {
+        "title": "Технические характеристики",
+        "items": [
+          "Частота ультразвука: 28.5 кГц",
+          "Максимальная частота резов витреотома: 7500 cpm",
+          "Совместимость: 23G, 25G, 27G"
+        ]
+      },
+      {
+        "title": "Преимущества",
+        "items": [
+          "Передний и задний сегменты — одна система",
+          "Эргономика для максимального комфорта хирурга",
+          "Адаптивные технологии снижают риск осложнений",
+          "Возможность модульного обновления"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/products/stellaris-front-v2.webp",
+        "alt": "Stellaris Elite™",
+        "originalSrc": "/assets/original/stellaris.png",
+        "cleaned": true
+      },
+      {
+        "src": "/assets/products/stellaris-suite-v2.webp",
+        "alt": "Stellaris Elite™",
+        "originalSrc": "/assets/original/1.jpg",
+        "cleaned": true
+      },
+      {
+        "src": "/assets/products/stellaris-angle-v2.webp",
+        "alt": "Stellaris Elite™",
+        "originalSrc": "/assets/original/stellaris-2-Photoroom.png",
+        "cleaned": true
+      }
+    ],
+    "cleaned": true,
+    "imageWidth": 1254,
+    "imageHeight": 1254
+  },
+  {
+    "slug": "luxgood-toric",
+    "href": "/products/luxgood-toric.html",
+    "title": "LuxGood™ Toric",
+    "tag": "ИОЛ торическая Preloaded",
+    "description": "Торическая предзагруженная ИОЛ для коррекции астигматизма. Монолитная конструкция с 4-точечной гаптикой. Цилиндр до 6.00D.",
+    "image": "/assets/catalog/luxgood-toric.webp",
+    "sourceImage": "https://mstk-med.com/mstk/img/LuxSmart (1).png",
+    "features": [
+      "Безаберрационная асферическая оптика",
+      "Монолитная 4-точечная гаптика",
+      "Квадратный край 360°",
+      "Инжектор Accuject™ Pro, разрез 2.2 мм",
+      "Цилиндр: 0.75–6.00D"
+    ],
+    "specs": [
+      {
+        "title": "Материал",
+        "items": [
+          "Гидрофобный акрил",
+          "УФ-фильтр",
+          "Рефракционный индекс: 1.54 при 35°С"
+        ]
+      },
+      {
+        "title": "Диоптрийный ряд",
+        "items": [
+          "Сфера: +6.00–+30.00D (шаг 0.50D)",
+          "Цилиндр: 0.75, 1.00, 1.50, 2.25, 3.00, 3.75, 4.50, 5.25, 6.00D"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/catalog/luxgood-toric.webp",
+        "alt": "LuxGood™ Toric",
+        "originalSrc": "/assets/original/LuxSmart (1).png",
+        "cleaned": true
+      }
+    ],
+    "cleaned": true,
+    "imageWidth": 1254,
+    "imageHeight": 1254
+  },
+  {
+    "slug": "luxgood",
+    "href": "/products/luxgood.html",
+    "title": "LuxGood™ Preloaded ИОЛ",
+    "tag": "ИОЛ монофокальная Preloaded",
+    "description": "Предустановленная монофокальная ИОЛ из высококачественного гидрофобного акрила. Удобная имплантация через разрез 2.2 мм с инжектором Accuject™ Pro.",
+    "image": "/assets/catalog/luxgood.webp",
+    "sourceImage": "https://mstk-med.com/mstk/img/LuxSmart.png",
+    "features": [
+      "Высококачественный гидрофобный акрил без глистенинга",
+      "Безаберрационная асферическая оптика",
+      "Разрез 2.2 мм — минимальная инвазивность",
+      "Предзагруженная система: инжектор Accuject™ Pro",
+      "Квадратный край 360° против помутнения задней капсулы"
+    ],
+    "specs": [
+      {
+        "title": "Материал",
+        "items": [
+          "Гидрофобный акрил",
+          "УФ-фильтр"
+        ]
+      },
+      {
+        "title": "Дизайн",
+        "items": [
+          "Асферическая передняя поверхность",
+          "Диаметр оптики: 6.0 мм",
+          "Общий диаметр: 12.5 мм",
+          "Квадратный край 360°"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/catalog/luxgood.webp",
+        "alt": "LuxGood™ Preloaded ИОЛ",
+        "originalSrc": "/assets/original/LuxSmart.png",
+        "cleaned": true
+      }
+    ],
+    "cleaned": true,
+    "imageWidth": 1254,
+    "imageHeight": 1254
+  },
+  {
+    "slug": "luxsmart-toric",
+    "href": "/products/luxsmart-toric.html",
+    "title": "LuxSmart™ Toric",
+    "tag": "ИОЛ EDOF торическая",
+    "description": "EDOF-ИОЛ с коррекцией астигматизма. Торический дизайн на задней поверхности обеспечивает стабильную и предсказуемую коррекцию.",
+    "image": "/assets/catalog/luxsmart-toric.webp",
+    "sourceImage": "https://mstk-med.com/mstk/img/LuxSmart™-lenses.png",
+    "features": [
+      "Гидрофобный акрил, содержание воды <0.5%",
+      "EDOF + коррекция астигматизма в одной линзе",
+      "Торический дизайн на задней поверхности",
+      "Монолитная 4-точечная конструкция",
+      "Цилиндр до +6.00D"
+    ],
+    "specs": [
+      {
+        "title": "Материал",
+        "items": [
+          "Гидрофобный акрил",
+          "УФ и желтый фильтр",
+          "Рефракционный индекс: 1.54 при 35°C"
+        ]
+      },
+      {
+        "title": "Диоптрийный ряд",
+        "items": [
+          "Сфера: +6.00–+34.00D",
+          "Цилиндр: 0.75, 1.00, 1.50, 2.25, 3.00, 3.75, 4.50, 5.25, 6.00D"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/catalog/luxsmart-toric.webp",
+        "alt": "LuxSmart™ Toric",
+        "originalSrc": "/assets/original/LuxSmart™-lenses.png",
+        "cleaned": true
+      }
+    ],
+    "cleaned": true,
+    "imageWidth": 1254,
+    "imageHeight": 1254
+  },
+  {
+    "slug": "luxsmart",
+    "href": "/products/luxsmart.html",
+    "title": "LuxSmart™ ИОЛ с углублённым фокусом",
+    "tag": "ИОЛ EDOF",
+    "description": "Премиальная гидрофобная EDOF-ИОЛ с технологией ПРО (Полностью Рефракционная Оптика). Расширенный диапазон фокуса без нежелательных оптических эффектов.",
+    "image": "/assets/catalog/luxsmart.webp",
+    "sourceImage": "https://mstk-med.com/mstk/img/83428-20108663.webp",
+    "features": [
+      "Гидрофобный акрил без риска глистенинга",
+      "EDOF — оптимальное зрение на среднем и дальнем расстояниях",
+      "Асферический дизайн с аберрациями 4 и 6 порядков",
+      "Без засветов, гало и нежелательных оптических эффектов",
+      "УФ и синий световой фильтр"
+    ],
+    "specs": [
+      {
+        "title": "Материал",
+        "items": [
+          "Гидрофобный акрил",
+          "УФ и синий световой фильтр",
+          "Рефракционный индекс: 1.54 при 35°C"
+        ]
+      },
+      {
+        "title": "Дизайн",
+        "items": [
+          "Монолитная 4-точечная платформа",
+          "Квадратный край 360°",
+          "Диаметр оптики: 6.0 мм",
+          "Общий диаметр: 11.0 мм"
+        ]
+      },
+      {
+        "title": "Константы",
+        "items": [
+          "SRK/T Constant A: 118.5",
+          "Хоффер Q pACD: 5.23"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/catalog/luxsmart.webp",
+        "alt": "LuxSmart™ ИОЛ с углублённым фокусом",
+        "originalSrc": "/assets/original/83428-20108663.webp",
+        "cleaned": true
+      }
+    ],
+    "cleaned": true,
+    "imageWidth": 1254,
+    "imageHeight": 1254
+  },
+  {
+    "slug": "service",
+    "href": "/products/service.html",
+    "title": "Техническое обслуживание Stellaris",
+    "tag": "Сервис",
+    "description": "Профессиональный ремонт и ТО хирургических систем Stellaris. Сертифицированные инженеры, оригинальные запчасти, гарантия на все виды работ.",
+    "image": "/assets/catalog/service.webp",
+    "sourceImage": "https://mstk-med.com/mstk/img/64be29c7157251d4d770313d_Medical-Equipment-Installation-Repair-and-Maintenance-copy-Photoroom.png",
+    "features": [
+      "Плановое ТО — предотвращение сбоев и продление ресурса",
+      "Диагностика и устранение неисправностей любой сложности",
+      "Обновление ПО и калибровка оборудования",
+      "Замена деталей оригинальными компонентами",
+      "Срочный выезд на место или ремонт в сервисном центре"
+    ],
+    "specs": [
+      {
+        "title": "Преимущества",
+        "items": [
+          "Быстрое реагирование на заявки",
+          "Сертифицированные инженеры со специализацией Stellaris",
+          "Только оригинальные запчасти",
+          "Гарантия на все работы и заменённые детали"
+        ]
+      },
+      {
+        "title": "Статистика",
+        "items": [
+          "103 аппарата на обслуживании",
+          "Все поставленные нами аппараты работают исправно",
+          "Возраст многих аппаратов — более 10 лет"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/catalog/service.webp",
+        "alt": "Техническое обслуживание Stellaris",
+        "originalSrc": "/assets/original/64be29c7157251d4d770313d_Medical-Equipment-Installation-Repair-and-Maintenance-copy-Photoroom.png",
+        "cleaned": true
+      }
+    ],
+    "cleaned": true,
+    "imageWidth": 1254,
+    "imageHeight": 1254
+  },
+  {
+    "slug": "silicone",
+    "href": "/products/silicone.html",
+    "title": "Силиконовые масла и растворы",
+    "tag": "Витреоретинальные материалы",
+    "description": "Высококачественные витреоретинальные материалы для стабилизации сетчатки, замещения стекловидного тела и создания внутренней поддержки.",
+    "image": "/assets/products/oxane-v2.webp",
+    "sourceImage": "https://mstk-med.com/mstk/img/unnamed-Photoroom.png",
+    "features": [
+      "Силиконовые масла для витреоретинальных операций",
+      "EYEFILL® H.D. — премиальный витреоретинальный материал",
+      "Сбалансированный солевой раствор (БСС) высокой степени очистки",
+      "Стабилизация сетчатки и замещение стекловидного тела"
+    ],
+    "specs": [
+      {
+        "title": "Ассортимент",
+        "items": [
+          "Силиконовые масла различной вязкости",
+          "EYEFILL® H.D.",
+          "Сбалансированный солевой раствор (БСС)"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/products/oxane-v2.webp",
+        "alt": "Силиконовые масла и растворы",
+        "originalSrc": "/assets/original/unnamed-Photoroom.png",
+        "cleaned": true
+      },
+      {
+        "src": "/assets/products/eyefill-v2.webp",
+        "alt": "Силиконовые масла и растворы",
+        "originalSrc": "/assets/original/csm_eyefill-hd-1_2f54ab8173.png",
+        "cleaned": true
+      },
+      {
+        "src": "/assets/products/bss-v2.webp",
+        "alt": "Силиконовые масла и растворы",
+        "originalSrc": "/assets/original/photo_2024-12-04_08-44-08.jpg",
+        "cleaned": true
+      }
+    ],
+    "cleaned": true,
+    "imageWidth": 1254,
+    "imageHeight": 1254
+  },
+  {
+    "slug": "surgery",
+    "href": "/products/surgery.html",
+    "title": "Хирургические наборы и инструменты",
+    "tag": "Расходные материалы",
+    "description": "Профессиональные хирургические наборы и расходные материалы для факоэмульсификации. Совместимость с системами Stellaris Elite™.",
+    "image": "/assets/products/surgery-kit.webp",
+    "sourceImage": "https://mstk-med.com/mstk/img/33333.png",
+    "features": [
+      "Наборы для факоэмульсификации — всё в одной упаковке",
+      "Совместимость со Stellaris Elite™",
+      "Высокое качество и безопасность операций",
+      "Соответствие международным стандартам"
+    ],
+    "specs": [
+      {
+        "title": "Состав наборов",
+        "items": [
+          "Ирригационные и аспирационные линии",
+          "Наконечники для факоэмульсификации",
+          "Операционные дрейпы и защитные накладки",
+          "Вискоэластики и вспомогательные материалы"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/products/surgery-kit.webp",
+        "alt": "Хирургические наборы и инструменты",
+        "originalSrc": "/assets/original/33333.png",
+        "cleaned": true
+      },
+      {
+        "src": "/assets/products/bi-blade-v2.webp",
+        "alt": "Хирургические наборы и инструменты",
+        "originalSrc": "/assets/original/3523b63ef751bb0049c2f458265ee429.webp",
+        "cleaned": true
+      }
+    ],
+    "cleaned": true,
+    "imageWidth": 1254,
+    "imageHeight": 1254
+  }
+]

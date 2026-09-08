@@ -1,0 +1,155 @@
+{
+  "source": "https://optikom-production.up.railway.app/",
+  "logo": "/assets/original/logo.png",
+  "hero": {
+    "title": "Офтальмология нового поколения",
+    "description": "Передовые решения Bausch + Lomb для хирургии катаракты и витреоретинальных операций. Поставки в ведущие клиники России с 2006 года."
+  },
+  "benefits": [
+    {
+      "title": "Официальный статус",
+      "description": "Прямые поставки от Bausch + Lomb. Гарантия оригинальности каждой единицы продукции, вся разрешительная документация."
+    },
+    {
+      "title": "Собственный сервис",
+      "description": "Сертифицированная команда инженеров. Плановое ТО, срочный ремонт, оригинальные запчасти — всё в одном месте."
+    },
+    {
+      "title": "Стабильные поставки",
+      "description": "18 лет безупречной логистики. Складской запас и оперативная доставка в клиники по всей России без задержек."
+    },
+    {
+      "title": "Экспертная поддержка",
+      "description": "Помогаем подобрать оптимальные ИОЛ под задачи клиники. Обучение персонала, внедрение новых технологий."
+    }
+  ],
+  "process": [
+    {
+      "title": "Заявка и консультация",
+      "description": "Оставьте заявку — наш менеджер свяжется в течение рабочего дня. Подберём оптимальные позиции под задачи вашей клиники."
+    },
+    {
+      "title": "Договор и поставка",
+      "description": "Оформляем договор, согласовываем сроки и объёмы. Оригинальная продукция Bausch + Lomb с полным пакетом документации."
+    },
+    {
+      "title": "Постпродажная поддержка",
+      "description": "Технический сервис, обучение персонала, плановое ТО и оперативная поддержка на протяжении всего срока сотрудничества."
+    }
+  ],
+  "about": {
+    "description": "ООО «Оптиком» — официальный дистрибьютор Bausch + Lomb. Поставки оборудования и ИОЛ в клиники России с 2006 года.",
+    "paragraphs": [
+      "ООО «Оптиком» основано в 2006 году. За почти два десятилетия работы компания выросла в одного из ключевых дистрибьюторов офтальмологического оборудования Bausch + Lomb в России.",
+      "Сегодня мы поставляем оборудование и расходные материалы в более чем 100 государственных и частных клиник страны. В нашем активе — собственная сервисная служба с сертифицированными инженерами и безупречная репутация надёжного партнёра.",
+      "Все 103 аппарата, поставленных нами, продолжают работать — многим более 10 лет. Это лучшее подтверждение качества нашего сервиса."
+    ],
+    "image": "/assets/products/bi-blade-v2.webp",
+    "partner": "Bausch + Lomb — американская компания, мировой лидер в производстве контактных линз, офтальмологического хирургического оборудования и интраокулярных линз.",
+    "originalImage": "/assets/original/3523b63ef751bb0049c2f458265ee429.webp"
+  },
+  "equipment": {
+    "description": "Комбинированная офтальмологическая платформа для хирургии переднего и заднего сегментов. Единая система — неограниченные возможности хирурга.",
+    "specs": [
+      {
+        "value": "7 500",
+        "label": "cpm витрэктомия"
+      },
+      {
+        "value": "27G",
+        "label": "совместимость"
+      },
+      {
+        "value": "2-в-1",
+        "label": "передний + задний"
+      }
+    ]
+  },
+  "images": [
+    {
+      "url": "https://mstk-med.com/mstk/img/1.jpg",
+      "path": "/assets/original/1.jpg",
+      "bytes": 77126
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/33333.png",
+      "path": "/assets/original/33333.png",
+      "bytes": 111510
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/3523b63ef751bb0049c2f458265ee429.webp",
+      "path": "/assets/original/3523b63ef751bb0049c2f458265ee429.webp",
+      "bytes": 66540
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/64be29c7157251d4d770313d_Medical-Equipment-Installation-Repair-and-Maintenance-copy-Photoroom.png",
+      "path": "/assets/original/64be29c7157251d4d770313d_Medical-Equipment-Installation-Repair-and-Maintenance-copy-Photoroom.png",
+      "bytes": 600472
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/83428-20108663.webp",
+      "path": "/assets/original/83428-20108663.webp",
+      "bytes": 2226
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/LuxSmart (1).png",
+      "path": "/assets/original/LuxSmart (1).png",
+      "bytes": 253485
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/LuxSmart.png",
+      "path": "/assets/original/LuxSmart.png",
+      "bytes": 63314
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/LuxSmart™-lenses.png",
+      "path": "/assets/original/LuxSmart™-lenses.png",
+      "bytes": 106552
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/csm_aekros-ao_f426e2ab71.jpg",
+      "path": "/assets/original/csm_aekros-ao_f426e2ab71.jpg",
+      "bytes": 12676
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/csm_envista-toric_fc1affb7c7.jpg",
+      "path": "/assets/original/csm_envista-toric_fc1affb7c7.jpg",
+      "bytes": 15557
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/csm_eyefill-hd-1_2f54ab8173.png",
+      "path": "/assets/original/csm_eyefill-hd-1_2f54ab8173.png",
+      "bytes": 63729
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/evistar.jpg",
+      "path": "/assets/original/evistar.jpg",
+      "bytes": 10139
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/photo_2024-12-04_08-44-08.jpg",
+      "path": "/assets/original/photo_2024-12-04_08-44-08.jpg",
+      "bytes": 17274
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/stellaris-2-Photoroom.png",
+      "path": "/assets/original/stellaris-2-Photoroom.png",
+      "bytes": 134259
+    },
+    {
+      "url": "https://mstk-med.com/mstk/img/unnamed-Photoroom.png",
+      "path": "/assets/original/unnamed-Photoroom.png",
+      "bytes": 203600
+    },
+    {
+      "url": "https://mstk-med.com/mstk/stellaris.png",
+      "path": "/assets/original/stellaris.png",
+      "bytes": 488624
+    },
+    {
+      "url": "https://optikom-production.up.railway.app/img/logo.png",
+      "path": "/assets/original/logo.png",
+      "bytes": 25779
+    }
+  ]
+}

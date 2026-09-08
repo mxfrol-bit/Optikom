@@ -1,0 +1,11 @@
+.git
+.openai
+node_modules
+dist
+.vinext
+.wrangler
+.env*
+*.tsbuildinfo
+work
+outputs
+.DS_Store

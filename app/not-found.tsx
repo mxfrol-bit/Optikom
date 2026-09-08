@@ -1,0 +1,1 @@
+export default function NotFound(){return <main className="empty-page"><p className="section-label">ОПТИКОМ / 404</p><h1>Страница вне фокуса.</h1><a href="/" className="button primary">Вернуться на главную</a></main>}
