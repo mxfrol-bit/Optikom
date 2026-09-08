@@ -9,6 +9,7 @@ import {
 import { Brand } from './site-header';
 import products from '@/lib/products.json';
 import original from '@/lib/original-content.json';
+import { productHighlights } from '@/lib/product-highlights';
 export const names: Record<string, string> = {
   envista: 'enVista®',
   'envista-toric': 'enVista™ Toric',
@@ -24,6 +25,7 @@ export const names: Record<string, string> = {
 };
 export function ProductCard({ slug }: { slug: string }) {
   const p = products.find((p) => p.slug === slug)!;
+  const highlight = productHighlights[slug];
   return (
     <a className={'product-card product-' + slug} href={p.href}>
       <div
@@ -44,10 +46,22 @@ export function ProductCard({ slug }: { slug: string }) {
         <span className="round-arrow">
           <ArrowUpRight size={19} />
         </span>
+        {highlight && (
+          <span className="card-signature" data-tone={highlight.tone}>
+            {highlight.badge}
+          </span>
+        )}
       </div>
       <div className="product-card-content">
         <span className="product-kind">{p.tag.replace('ИОЛ ', '')}</span>
         <h3>{names[p.slug]}</h3>
+        {highlight && (
+          <ul className="card-product-facts" aria-label="Ключевые особенности">
+            {highlight.chips.map((chip) => (
+              <li key={chip}>{chip}</li>
+            ))}
+          </ul>
+        )}
         <p>{p.description}</p>
       </div>
     </a>

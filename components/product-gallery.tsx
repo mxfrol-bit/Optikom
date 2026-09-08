@@ -114,8 +114,10 @@ export function ProductGallery({
                     width="1254"
                     height="1254"
                     style={{
-                      left: 50 - detail.x * 3.8 + '%',
-                      top: 50 - detail.y * 3.8 + '%',
+                      left: 50 - detail.x * (detail.zoom || 3.8) + '%',
+                      top: 50 - detail.y * (detail.zoom || 3.8) + '%',
+                      width: (detail.zoom || 3.8) * 100 + '%',
+                      height: (detail.zoom || 3.8) * 100 + '%',
                     }}
                   />
                   <Scan size={17} />

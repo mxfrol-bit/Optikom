@@ -19,9 +19,16 @@ import products from '@/lib/products.json';
 import { productDetails } from '@/lib/product-details';
 import { LensComparison } from '@/components/lens-comparison';
 import { lensComparison } from '@/lib/lens-comparison';
+import {
+  ProductFamily,
+  ProductHighlights,
+} from '@/components/product-highlights';
 type Props = {
   params: Promise<{ path: string[] }>;
-  searchParams: Promise<{ product?: string | string[] }>;
+  searchParams: Promise<{
+    product?: string | string[];
+    compare?: string | string[];
+  }>;
 };
 const iolSlugs = [
   'envista',
@@ -74,6 +81,23 @@ export default async function Page({ params, searchParams }: Props) {
   if (route === 'index.html') return <Home />;
   if (route === 'products/index.html' || route === 'products/iol.html') {
     const onlyIol = route === 'products/iol.html';
+    const query = await searchParams;
+    const requested =
+      typeof query.compare === 'string'
+        ? [
+            ...new Set(
+              query.compare
+                .split(',')
+                .filter((slug) => iolSlugs.includes(slug)),
+            ),
+          ].slice(0, 3)
+        : [];
+    const initialSelection =
+      requested.length >= 2
+        ? requested
+        : requested.length === 1
+          ? [requested[0], requested[0] === 'envista' ? 'luxsmart' : 'envista']
+          : ['envista', 'luxsmart'];
     return (
       <>
         <Header />
@@ -159,7 +183,10 @@ export default async function Page({ params, searchParams }: Props) {
               </>
             )}
           </div>
-          <LensComparison products={lensComparison} />
+          <LensComparison
+            products={lensComparison}
+            initialSelection={initialSelection}
+          />
           <ContactCTA />
         </main>
         <Footer />
@@ -298,9 +325,25 @@ export default async function Page({ params, searchParams }: Props) {
             details={productDetails[p.slug]}
           />
           <div className="detail-copy">
+            <ProductFamily slug={p.slug} />
             <span className="section-label">{p.tag}</span>
             <h1>{p.title}</h1>
             <p className="detail-desc">{p.description}</p>
+            <div className="button-row product-primary-actions">
+              <a
+                className="button primary"
+                href={'/contact.html?product=' + p.slug}
+              >
+                Запросить предложение <ArrowUpRight size={18} />
+              </a>
+              <a className="text-link" href="tel:+78312140067">
+                Связаться с нами <ArrowUpRight size={15} />
+              </a>
+            </div>
+            <ProductHighlights
+              slug={p.slug}
+              isLens={iolSlugs.includes(p.slug)}
+            />
             <ul className="detail-features">
               {p.features.map((x) => (
                 <li key={x}>{x}</li>
@@ -317,17 +360,6 @@ export default async function Page({ params, searchParams }: Props) {
                   </ul>
                 </details>
               ))}
-            </div>
-            <div className="button-row">
-              <a
-                className="button primary"
-                href={'/contact.html?product=' + p.slug}
-              >
-                Запросить предложение <ArrowUpRight size={18} />
-              </a>
-              <a className="text-link" href="tel:+78312140067">
-                Связаться с нами <ArrowUpRight size={15} />
-              </a>
             </div>
           </div>
         </section>

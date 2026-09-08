@@ -14,8 +14,14 @@ const rows = [
   'Система имплантации',
 ];
 
-export function LensComparison({ products }: { products: ComparedLens[] }) {
-  const [selected, setSelected] = useState(['envista', 'luxsmart']);
+export function LensComparison({
+  products,
+  initialSelection = ['envista', 'luxsmart'],
+}: {
+  products: ComparedLens[];
+  initialSelection?: string[];
+}) {
+  const [selected, setSelected] = useState(initialSelection);
   const [differencesOnly, setDifferencesOnly] = useState(false);
   const compared = selected.map((slug) =>
     products.find((item) => item.slug === slug)!,
