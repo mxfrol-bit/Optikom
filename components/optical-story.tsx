@@ -4,6 +4,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import { OpticalLens } from './optical-lens';
 
 const chapters = [
   {
@@ -106,8 +107,7 @@ export function OpticalStory() {
         <div className="optical-story-copy">
           <p className="section-label">ОПТИКОМ / ВНУТРИ ТЕХНОЛОГИИ</p>
           <h2 id="optical-story-title" className="optical-story-intro">
-            Искусство
-            <br />
+            Искусство <br />
             <span>ясного взгляда.</span>
           </h2>
           <div className="optical-chapters">
@@ -121,11 +121,7 @@ export function OpticalStory() {
                 <span className="optical-chapter-number">
                   0{index + 1} / {chapter.label}
                 </span>
-                <h3>
-                  {chapter.title.split('\n').map((line) => (
-                    <span key={line}>{line}</span>
-                  ))}
-                </h3>
+                <h3>{chapter.title}</h3>
                 <p>{chapter.description}</p>
                 {index === 2 && (
                   <a className="text-link" href="/products/iol.html#compare">
@@ -137,16 +133,7 @@ export function OpticalStory() {
           </div>
         </div>
         <div className="optical-story-visual">
-          <div className="optical-story-picture">
-            <img
-              src="/assets/optics/optical-night.webp"
-              alt="Художественный макрорендер прозрачной интраокулярной линзы в бирюзовом и янтарном свете"
-              width="1536"
-              height="1024"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
+          <OpticalLens />
           <div className="optical-story-caption">
             <span>
               0{active + 1} <span>/ 03</span>

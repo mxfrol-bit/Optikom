@@ -20,8 +20,7 @@ export function OriginalCompany() {
         <div>
           <span className="section-label">ИСТОРИЯ КОМПАНИИ</span>
           <h2>
-            Экспертиза, которая
-            <br />
+            Экспертиза, которая <br />
             измеряется годами.
           </h2>
           {original.about.paragraphs.map((p) => (
@@ -36,8 +35,7 @@ export function OriginalCompany() {
         <span className="section-label">КЛЮЧЕВОЙ ПАРТНЁР</span>
         <div>
           <h2>
-            Официальный дистрибьютор
-            <br />
+            Официальный дистрибьютор <br />
             Bausch + Lomb.
           </h2>
           <p>{original.about.partner}</p>
@@ -55,8 +53,7 @@ export function HomeContact() {
       <div>
         <span className="section-label">СВЯЗАТЬСЯ С НАМИ</span>
         <h2>
-          Готовы
-          <br />к сотрудничеству?
+          Готовы <br />к сотрудничеству?
         </h2>
         <p>
           Оставьте заявку — ответим в течение рабочего дня и подготовим
@@ -68,8 +65,7 @@ export function HomeContact() {
           <a href="mailto:optikom_iol@mail.ru">optikom_iol@mail.ru</a>
           <a href="mailto:info@optikom.pro">info@optikom.pro</a>
           <span>
-            г. Нижний Новгород,
-            <br />
+            г. Нижний Новгород, <br />
             ул. Агрономическая, д. 52А
           </span>
         </div>

@@ -18,8 +18,7 @@ export function HomeSections() {
               01 / РЕШЕНИЯ ДЛЯ ВАШЕЙ ПРАКТИКИ
             </span>
             <h2>
-              Технологии, которые
-              <br />
+              Технологии, которые <br />
               меняют <span>взгляд на мир.</span>
             </h2>
           </div>
@@ -35,13 +34,11 @@ export function HomeSections() {
             <span className="section-label">01 / ИНТРАОКУЛЯРНЫЕ ЛИНЗЫ</span>
             <div className="solution-feature-copy">
               <h3>
-                Маленькая линза.
-                <br />
+                Маленькая линза. <br />
                 Большая разница.
               </h3>
               <p>
-                Монофокальные, торические
-                <br />и EDOF-линзы Bausch + Lomb.
+                Монофокальные, торические <br />и EDOF-линзы Bausch + Lomb.
               </p>
               <span className="button white">
                 Выбрать ИОЛ <ArrowUpRight size={18} />
@@ -62,8 +59,7 @@ export function HomeSections() {
             <a className="solution-equipment" href="/products/equipment.html">
               <span className="section-label">02 / ОБОРУДОВАНИЕ</span>
               <h3>
-                Точность.
-                <br />
+                Точность. <br />
                 Под вашим контролем.
               </h3>
               <img
@@ -94,8 +90,7 @@ export function HomeSections() {
               <div>
                 <span className="section-label">03 / МАТЕРИАЛЫ</span>
                 <h3>
-                  Каждая деталь
-                  <br />
+                  Каждая деталь <br />
                   имеет значение.
                 </h3>
                 <p>Масла, растворы и расходные материалы</p>
@@ -114,8 +109,7 @@ export function HomeSections() {
                 02 / ОПТИКА БЕЗ КОМПРОМИССОВ
               </span>
               <h2>
-                Разные задачи.
-                <br />
+                Разные задачи. <br />
                 <span>Индивидуальные решения.</span>
               </h2>
             </div>
@@ -148,8 +142,7 @@ export function HomeSections() {
         <div className="service-copy">
           <span className="section-label">03 / БОЛЬШЕ, ЧЕМ ПОСТАВКА</span>
           <h2>
-            Ваша уверенность.
-            <br />
+            Ваша уверенность. <br />
             <span>Наша работа.</span>
           </h2>
           <p>
@@ -190,8 +183,7 @@ export function HomeSections() {
           <div>
             <span className="section-label">04 / ОПТИКОМ В ЦИФРАХ</span>
             <h2>
-              Масштаб доверия.
-              <br />
+              Масштаб доверия. <br />
               <span>С 2006 года.</span>
             </h2>
           </div>
@@ -214,8 +206,7 @@ export function HomeSections() {
             ПРОСТО НАЧАТЬ. ЛЕГКО ПРОДОЛЖАТЬ.
           </span>
           <h2>
-            Три шага
-            <br />к партнёрству.
+            Три шага <br />к партнёрству.
           </h2>
         </div>
         <div className="process-steps">

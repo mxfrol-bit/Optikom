@@ -73,8 +73,7 @@ export function Stats() {
       <div>
         <strong>2006</strong>
         <span>
-          год основания
-          <br />
+          год основания <br />
           компании
         </span>
       </div>
@@ -83,27 +82,24 @@ export function Stats() {
           100<em>+</em>
         </strong>
         <span>
-          клиник-партнёров
-          <br />
+          клиник-партнёров <br />
           по всей России
         </span>
       </div>
       <div>
         <strong>
-          40<small>тыс.</small>
+          40 <small>тыс.</small>
           <em>+</em>
         </strong>
         <span>
-          линз поставляем
-          <br />
+          линз поставляем <br />
           ежегодно
         </span>
       </div>
       <div>
         <strong>103</strong>
         <span>
-          аппарата на техническом
-          <br />
+          аппарата на техническом <br />
           обслуживании
         </span>
       </div>
@@ -142,13 +138,11 @@ export function ContactCTA() {
       <div className="cta-copy">
         <span className="section-label">ДАВАЙТЕ СМОТРЕТЬ ВПЕРЁД</span>
         <h2>
-          Большие возможности
-          <br />
+          Большие возможности <br />
           начинаются с диалога.
         </h2>
         <p>
-          Подберём решение под задачи вашей клиники.
-          <br />
+          Подберём решение под задачи вашей клиники. <br />
           От одной линзы до оснащения операционной.
         </p>
         <div className="button-row">
@@ -170,8 +164,7 @@ export function Footer() {
         <div className="footer-brand">
           <Brand />
           <p>
-            Официальный дистрибьютор
-            <br />
+            Официальный дистрибьютор <br />
             Bausch + Lomb в России.
           </p>
         </div>
@@ -216,8 +209,7 @@ export function Footer() {
             optikom_iol@mail.ru <ArrowUpRight size={13} />
           </a>
           <span>
-            Нижний Новгород
-            <br />
+            Нижний Новгород <br />
             ул. Агрономическая, 52А
           </span>
         </div>

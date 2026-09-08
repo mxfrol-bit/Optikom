@@ -40,8 +40,7 @@ export function LensComparison({
         <div>
           <span className="section-label">ВЫБОР В ДЕТАЛЯХ</span>
           <h2 id="comparison-title">
-            Рядом.
-            <br />
+            Рядом. <br />
             <span>Чтобы увидеть разницу.</span>
           </h2>
         </div>
@@ -96,12 +95,10 @@ export function LensComparison({
             <tr>
               <th scope="col">
                 <span className="comparison-table-label">
-                  BAUSCH
-                  <br />+ LOMB
+                  BAUSCH <br />+ LOMB
                 </span>
                 <small>
-                  Характеристики
-                  <br />
+                  Характеристики <br />
                   из каталога
                 </small>
               </th>

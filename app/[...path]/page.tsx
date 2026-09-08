@@ -122,14 +122,12 @@ export default async function Page({ params, searchParams }: Props) {
             <h1>
               {onlyIol ? (
                 <>
-                  Оптика для
-                  <br />
+                  Оптика для <br />
                   <span>каждой задачи.</span>
                 </>
               ) : (
                 <>
-                  Технологии, которым
-                  <br />
+                  Технологии, которым <br />
                   <span>вы доверяете зрение.</span>
                 </>
               )}
@@ -216,7 +214,7 @@ export default async function Page({ params, searchParams }: Props) {
                 ОПТИКОМ / РЯДОМ С ВАМИ С 2006 ГОДА
               </span>
               <h1>
-                В основе технологий —<br />
+                В основе технологий — <br />
                 доверие людей.
               </h1>
               <p>{original.about.description}</p>
@@ -252,8 +250,7 @@ export default async function Page({ params, searchParams }: Props) {
               КОНТАКТЫ / НАЧАЛО СОТРУДНИЧЕСТВА
             </span>
             <h1>
-              На одной волне.
-              <br />
+              На одной волне. <br />
               <span>На вашей стороне.</span>
             </h1>
             <p>
@@ -275,16 +272,14 @@ export default async function Page({ params, searchParams }: Props) {
               <div className="contact-item">
                 <span>ПРИХОДИТЕ В ГОСТИ</span>
                 <p>
-                  Нижний Новгород,
-                  <br />
+                  Нижний Новгород, <br />
                   ул. Агрономическая, д. 52А
                 </p>
               </div>
               <div className="contact-item">
                 <span>РЕЖИМ РАБОТЫ</span>
                 <p>
-                  Понедельник — пятница
-                  <br />
+                  Понедельник — пятница <br />
                   09:00–18:00
                 </p>
               </div>

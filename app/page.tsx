@@ -15,8 +15,7 @@ export default function Home() {
               LOMB
             </p>
             <h1>
-              Офтальмология
-              <br />
+              Офтальмология <br />
               <span>нового поколения.</span>
             </h1>
             <p className="hero-sub">Передовые решения Bausch + Lomb.</p>
@@ -33,8 +32,8 @@ export default function Home() {
             <div className="hero-story">
               <span className="micro">В ФОКУСЕ — ВАША ПРАКТИКА</span>
               <p>
-                Линзы, оборудование и поддержка,
-                <br />с которыми вы видите больше.
+                Линзы, оборудование и поддержка, <br />с которыми вы видите
+                больше.
               </p>
               <a className="button primary" href="/products/index.html">
                 Открыть каталог <ArrowUpRight size={18} />
@@ -56,8 +55,7 @@ export default function Home() {
                 100<span>+</span>
               </strong>
               <p>
-                клиник России
-                <br />
+                клиник России <br />
                 выбирают Оптиком
               </p>
             </div>
@@ -86,16 +84,14 @@ export default function Home() {
         </section>
         <section id="solutions" className="partner-band container">
           <span>
-            Мировые технологии.
-            <br />
+            Мировые технологии. <br />
             Ваш надёжный партнёр.
           </span>
           <b className="bausch">
             BAUSCH <span>+</span> LOMB
           </b>
           <p>
-            Официальные поставки
-            <br />и сертифицированный сервис
+            Официальные поставки <br />и сертифицированный сервис
           </p>
         </section>
         <HomeSections />
